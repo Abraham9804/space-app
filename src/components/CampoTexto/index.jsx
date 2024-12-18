@@ -1,34 +1,27 @@
 import styled from "styled-components";
 
-const CampoTextoStyles = styled.input`
-    /*width: 30%;
-    background-color: none;
+const CampoTextoStyle = styled.input`
+    width: 40%;
+    height: 56px;
     border-radius: 10px;
-    border: 2px solid orange;*/
-
-    /* Barra de búsqueda */
-
-box-sizing: border-box;
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px 16px;
-gap: 365px;
-
-position: absolute;
-width: 652px;
-height: 56px;
-left: 766px;
-top: 64px;
-
-border-radius: 10px;
-
+    border: 1px solid #C98CF1;
+    background-color: transparent;
+    background-image: url('img/search.png');
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    color: white;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        color: white;
+    }
 `
 
+
 const CampoTexto = () => {
-    return <CampoTextoStyles type="text" placeholder="Que estas buscando?"/>
+    return  <CampoTextoStyle type="text" placeholder="Que estas buscando?"/>        
 }
 
 export default CampoTexto
