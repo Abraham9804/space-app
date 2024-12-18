@@ -15,6 +15,9 @@ const BarraLateral = () => {
                         <ItemNavegacion iconoActivo={"iconos/home-activo.png"} iconoInactivo={"iconos/home-inactivo.png"} activo>
                             Inicio
                         </ItemNavegacion>
+                        <ItemNavegacion iconoActivo={"iconos/mas-vistas-activo.png"} iconoInactivo={"iconos/mas-vistas-inactivo.png"}>
+                            Mas visitados
+                        </ItemNavegacion>
                     </ListaStyle>
                         
                    
