@@ -28,8 +28,9 @@ const TagTitulo = styled.h3`
 const Tags = () => {
     return <TagsContainer>
         <TagTitulo>Busque por tags: </TagTitulo>
+
         {tags.map(tag => {
-            return <ButtonTag id={tag.id}>{tag.titulo}</ButtonTag>
+            return <ButtonTag key={tag.id}>{tag.titulo}</ButtonTag>
         })}
     </TagsContainer>
         

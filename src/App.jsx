@@ -5,6 +5,9 @@ import BarraLateral from "./components/BarraLateral"
 import Banner from "./components/Banner"
 import bannerImg from "./assets/banner.png" //enviamos la url como una variable en los props
 import Galeria from "./components/Galeria"
+import { useState } from "react"
+import fotos from "./fotos.json"
+
 const FondoGradiente = styled.div`
   width: 100%;
   height: 100vh;
@@ -28,9 +31,10 @@ const ContenidoGaleria = styled.section`
 `
 
 
-
-function App() {
+const App = () => {
   
+  const [fotosGaleria, setFotosGaleria] = useState(fotos)
+
   return (
     <>
       <FondoGradiente>
@@ -41,7 +45,7 @@ function App() {
             <BarraLateral/>
             <ContenidoGaleria>
               <Banner texto="La galeria mas completa del espacio" backgroundImage={bannerImg}/>
-              <Galeria/>
+              <Galeria fotos={fotosGaleria}/>
             </ContenidoGaleria>
           </MainContainer>
         </AppContainer>
