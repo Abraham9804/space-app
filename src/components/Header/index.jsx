@@ -13,10 +13,10 @@ const HeaderStyle = styled.header`
 `
 
 const Header = () => {
-    return <HeaderStyle>
-        <img src="img/logo_blanco.png" alt="logo" />
-        <CampoTexto/>
-    </HeaderStyle>
+    return  <HeaderStyle>
+                <img src="img/logo_blanco.png" alt="logo"/>
+                <CampoTexto/>
+            </HeaderStyle>
 }
 
 export default Header

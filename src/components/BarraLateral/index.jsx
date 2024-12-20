@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import ItemNavegacion from "./ItemNavegacion";
 
+
 const ListaStyle = styled.ul`
     margin: 0;
     padding: 0;
     list-style: none;
 `
+
+
 
 
 const BarraLateral = () => {
@@ -18,9 +21,16 @@ const BarraLateral = () => {
                         <ItemNavegacion iconoActivo={"iconos/mas-vistas-activo.png"} iconoInactivo={"iconos/mas-vistas-inactivo.png"}>
                             Mas visitados
                         </ItemNavegacion>
+                        <ItemNavegacion iconoActivo={"iconos/me-gusta-activo.png"} iconoInactivo={"iconos/me-gusta-inactivo.png"}>
+                            Mas me gusta
+                        </ItemNavegacion>
+                        <ItemNavegacion iconoActivo={"iconos/nuevas-activo.png"} iconoInactivo={"iconos/nuevas-inactivo.png"}>
+                            Nuevas
+                        </ItemNavegacion>
+                        <ItemNavegacion iconoActivo={"iconos/sorprendeme-activo.png"} iconoInactivo={"iconos/sorprendeme-inactivo.png"}>
+                            Sorprendame
+                        </ItemNavegacion>
                     </ListaStyle>
-                        
-                   
                 </nav>
             </aside>
 }
