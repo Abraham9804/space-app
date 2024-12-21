@@ -10,7 +10,7 @@ import fotos from "./fotos.json"
 
 const FondoGradiente = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
 `
 
 const AppContainer = styled.div`

@@ -11,6 +11,12 @@ const GaleriaStyle = styled.section`
 
 const SeccionFluida = styled.section`
     flex-grow: 1;
+    
+`
+const SeccionFotos = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 `
 
 const Galeria = ({fotos = []}) => {
@@ -19,9 +25,11 @@ const Galeria = ({fotos = []}) => {
             <GaleriaStyle>
                 <SeccionFluida>
                     <Titulo>Navegue por la galeria </Titulo>
-                    {fotos.map(foto => {
-                        return <Imagen key={foto.id} url={foto.path}/>
-                    })}
+                    <SeccionFotos>
+                        {fotos.map(foto => {
+                            return <Imagen key={foto.id} url={foto.path} titulo={foto.titulo} fuente={foto.fuente}/>
+                        })}
+                    </SeccionFotos>
                 </SeccionFluida>
                 <Populares>
                 </Populares>
